@@ -1,0 +1,228 @@
+html {
+  overflow-x: hidden;
+  overflow-y: auto; 
+  height: 100vh;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: auto; 
+  position: relative;
+}
+nav {
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+}
+.container {
+/*   display: flex;
+  justify-content: center;
+  height: 100vh; */
+}
+
+/* used to space empty abolute elements */
+.scroll-container {
+  justify-content: center;
+  height: 100vh;
+  z-index: 2;
+}
+.class-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  
+  position: absolute;
+  background-color: #D4EBF8;
+  z-index: 4;
+  box-shadow: 0px 5px 10px gray;
+  margin: 0px;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 0px;
+}
+.big-circle{
+  background-image: url("https://cdn.glitch.global/79e62202-998e-4e6f-92a5-d89ab595ece8/techcircle3.jpg?v=1733190540360");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*   background-color:red; */
+  height: 140vw;
+  width: 140vw;
+  
+  left: 130vw;
+    /*  Top 50 but add 20 for offset title text  */
+  top: 70vh; 
+
+  margin-top: -70vw; 
+  margin-left: -70vw;
+  
+  position: absolute;
+  border-radius: 100%;
+  transition: transform 1000ms;
+  z-index: 2;
+  border: solid black 1px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+
+.rotate-buttons {
+  position: absolute;
+  /*  top 50vh but add 20vh for offset  */
+  top: 70vh;
+  left: 55vw;
+  z-index: 5;
+  margin-top: -110px;
+}
+.up-arrow {
+  font-size: 0px; line-height: 0%; width: 0px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 60px solid black;
+  transition: border 200ms;
+}
+.down-arrow {
+  font-size: 0px; line-height: 0%; width: 0px;
+  border-top: 60px solid black;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  transition: border 200ms;
+}
+.up-arrow:hover {
+  border-bottom: 60px solid gold;
+}
+.down-arrow:hover {
+  border-top: 60px solid gold;
+}
+
+.headshot-img-box {
+  position: absolute;
+  background-color: royalblue;
+  z-index: 2;
+  height: 20vw;
+  width: 20vw;
+  margin-top: -10vw;
+  margin-left: -10vw;
+  border-radius: 100%;
+  transition: transform 1000ms, box-shadow 300ms;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.headshot-img-box:hover {
+  box-shadow: 0px 0px 30px goldenrod;
+}
+
+.previous-button {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  width: 50px;
+}
+.next-button {
+  position: absolute;
+  z-index: 2;
+  height: 100px;
+  width: 50px;
+}
+
+.headshot-img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 100%;
+/*   aspect-ratio: 1/1; */
+}
+
+.student-links {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+}
+.site-link-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.icon {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.uni {
+  height: 20rem;
+  width: 20rem !important;
+  object-fit: cover;
+}
+
+.student {
+  width: 24rem !important;
+}
+.students{
+  color: black;
+  background-color: #D4EBF8;
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin: 4em 2em;
+  background-color: #0173CC;
+}
+
+.navbar-nav {
+  width: 20rem;
+}
+
+.about-text {
+ font-size: calc(0.75rem + 0.5vw); 
+}
+.title-text {
+  font-size: calc(1.25rem + 0.2vw);
+  font-weight: bold;
+}
+.header-text {
+  font-size: calc(1.15rem + 0.2vw); 
+  font-weight: bold;
+}
+.large-title-text {
+  font-size: calc(4rem + 0.2vw);
+}
+
+/* Mobile view for page is still a bit cooked but ehh */ 
+@media screen and (max-width: 500px) {
+  .big-circle {
+    height: calc(200vw + 10vh);
+    width: calc(200vw + 10vh);
+  
+  
+    top: calc(-30vw + 10vh); 
+    left: 50vw;
+    
+    margin-top: calc(-100vw - 5vh);
+    margin-left: calc(-100vw - 5vh);
+    transform: rotate(-90deg);
+  }
+  .headshot-img-box {
+    height: 30vw;
+    width: 30vw;
+    margin-top: -15vw;
+    margin-left: -15vw;
+    border-radius: 100%;
+    transition: transform 1000ms;
+
+    background-size: cover;
+    background-position: center;
+    transform: rotate(90deg);
+  }
+  
+  .large-title-text {
+    font-size: calc(2rem + 2vw);
+  }
+  
+.rotate-buttons {
+  position: absolute;
+  /*  top 50vh but add 20vh for offset  */
+  top: 30vh;
+  left: 50vw;
+  z-index: 5;
+  margin-top: 0px;
+}
+}

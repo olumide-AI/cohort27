@@ -1,0 +1,41 @@
+.bio-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  position: absolute;
+  background-color: #D4EBF8;
+  top: 70vh;
+  margin-top: -50vh;
+  
+  padding: 1vw;
+  height: 100vh;
+  width: 55vw;
+  
+  transition: all 100ms;
+  opacity: 1;
+  border-right: 3px solid royalblue;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+
+@media screen and (max-width: 500px) { 
+  .bio-box {
+
+    background-color: #D4EBF8;
+    top: 60vh;
+    margin-top: -35vh;
+
+    padding: 1vw;
+    height: 100vh;
+    width: 100vw;
+
+    transition: all 100ms;
+    opacity: 1;
+    border-right: none;
+  }
+}

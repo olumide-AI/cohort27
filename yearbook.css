@@ -1,0 +1,64 @@
+/* Cookie google Font */
+.cookie-regular {
+  font-family: "Cookie", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Emilys candy google font */
+.emilys-candy-regular {
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Ensure the body and html take up full width and height */
+/* html, body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+} */
+
+/* Style the big circle */
+#big-circle {
+  margin-bottom: 50rem; /* Adds spacing below the circle */
+}
+
+/* Position the h1 below the big circle */
+h1 {
+  margin-top: 1rem; /* Adds spacing above the h1 */
+  margin-bottom: 0.3rem; /* Adds spacing below the h1 */
+  font-size: 5rem; /* Adjust font size if needed */
+  font:bold
+}
+
+/* Make the card group visible and responsive */
+.yearbook-container {
+  position: relative;
+  margin-top: 0vh; /* Adds spacing above the card group */
+  padding: 1rem; /* Adds horizontal padding */
+  z-index: 6;
+  background-color: #D4EBF8;
+  box-shadow: 0px 0px 10px gray;
+}
+
+/* Ensure cards fit within the viewport */
+.card {
+  margin-bottom: 0.5rem; /* Adds spacing between cards */
+}
+.card:hover {
+  box-shadow: 0px 0px 10px goldenrod;
+  transition: box-shadow 300ms;
+}
+/* .col {
+  align-content: end;
+} */
+
+/*adjusted image height to make all cards the same size*/
+/* .gabecard {
+  height: 72.3vh;
+}
+.alondracard {
+  height: 72vh;
+}
+.austincard {
+  height: 72.3vh;
+} */

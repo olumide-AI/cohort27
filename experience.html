@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--changed logo on web tab-->
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/79e62202-998e-4e6f-92a5-d89ab595ece8/devmissionsitelogo.png?v=1732068472378"
+      alt="hands coming together"
+    />
+    <!-- import the Cookie Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import the Emily's Candy Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap"
+      rel="stylesheet"
+    />
+    <!--webtab Title-->
+    <title>DevMission Cohort #27</title>
+
+    <!-- import the webpage's stylesheet[BootStrap & CSS] -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/bioBox.css" />
+    <link rel="stylesheet" href="/yearbook.css" />
+    <link rel="stylesheet" href="/experience.css" />
+    <link rel="stylesheet" href="/navbar.css" />
+    <!--  LINK Photos CSS Style Sheet    -->
+    <!--     <link rel="stylesheet" href="" />  -->
+
+    <!-- import the webpage's javascript file -->
+    <script src="/rotation.js" defer></script>
+  </head>
+
+  <body id="body">
+    <!-- NavBar   -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top toppage">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <a href="index.html"
+            ><img
+              src="https://cdn.glitch.global/79e62202-998e-4e6f-92a5-d89ab595ece8/cropped-DM-Full-Logo-01-2048x769.png?v=1732070442895"
+              alt="Dev Mission logo"
+              class="devlogo"
+          /></a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/experience.html">Cohort #27</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Photos.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar End   -->
+    <div class="class-title">
+      <h1 class="cookie-regular text-center large-title-text">
+        Cohort #27 Fall 2024
+      </h1>
+      <a href="#students"><button class="header-text students">All Students</button></a>
+    </div>
+
+    <div class="scroll-container">
+      <div>
+        <div class="bio-box">
+          <!--Empty background color div-->
+        </div>
+        <div class="bio-box" id="bio-box">
+          <p>Bio Content</p>
+        </div>
+
+        <div class="rotate-buttons">
+          <div onclick="RotatePrevPerson()" class="up-arrow"></div>
+          <div style="height: 100px"></div>
+          <div onclick="RotateNextPerson()" class="down-arrow"></div>
+        </div>
+      </div>
+
+      <div class="big-circle" id="big-circle">
+        <!--     Headshot-img-box location      -->
+      </div>
+    </div>
+    <!-- Card Group with 4 columns in 3 rows -->
+    <div class="yearbook-container" id="students">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(1)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/54089247215_6059de3987_w.jpg?v=1733030604165"
+              class="card-img-top uni"
+              alt="Pic of Tony"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Tony Li
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col" onclick="rotateToIndex(2)">
+          <div class="card student">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/IMG_1331.jpg?v=1733361566076"
+              class="card-img-top uni"
+              alt="Pic of Gabe"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Gabe Arreola
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(10)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/IMG_1458.jpg?v=1733027882902"
+              class="card-img-top uni"
+              alt="Pic of Austin"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Austin Hui
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(6)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/IMG_1446.jpg?v=1733361425844"
+              class="card-img-top uni"
+              alt="Pic of Alondra"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Alondra Sanchez
+              </h5>
+            </div>
+          </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(7)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/54089120634_c58d9cc692_w%20(1).jpg?v=1733028237619"
+              class="card-img-top uni"
+              alt="Pic of Juel"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Juel Gay
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(11)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/54089247695_e6592bca5c_w.jpg?v=1733027251468"
+              class="card-img-top uni"
+              alt="Pic of Rosandi"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Rosandi Solanga Arachchige
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(8)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/54087910547_c107b81355_w.jpg?v=1733027011185"
+              class="card-img-top uni"
+              alt="Pic of Aiman"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Aiman Lahmamsi
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(0)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/54087911567_df7f75098a_w.jpg?v=1733027199661"
+              class="card-img-top uni"
+              alt="Pic of Oussama"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Oussama Naji
+              </h5>
+            </div>
+          </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(3)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/54087911972_9c40639cda_w.jpg?v=1733027573536"
+              class="card-img-top uni"
+              alt="Pic of Charlie"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Charlie Nguyen
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(4)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/54089247065_9c0e4ee668_w.jpg?v=1733028275011"
+              class="card-img-top uni"
+              alt="Pic of Simon"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Simon Huang
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(9)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/54087911997_2e5c0be877_w.jpg?v=1733027596237"
+              class="card-img-top uni"
+              alt="Pic of Olumide"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Olumide Kolawole
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card student" onclick="rotateToIndex(5)">
+            <img
+              src="https://cdn.glitch.global/83dced80-fdc4-4d84-823a-e904608190b6/54089247435_eb8d24ba64_w.jpg?v=1733027536627"
+              class="card-img-top uni"
+              alt="Pic of Jay"
+            />
+            <div class="card-body">
+              <h5 class="card-title emilys-candy-regular text-center">
+                Jay Wen
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-body-tertiary text-black pt-4 ">
+  <div class="container border-dark">
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <h5>About Dev Mission</h5>
+        <p>
+          Dev Mission empowers youth and adults through technology education, 
+          creating opportunities and fostering innovation in underserved communities.
+        </p>
+      </div>
+
+    
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="/index.html" class="text-black text-decoration-none">Home</a></li>
+          <li><a href="/experience.html" class="text-black text-decoration-none">Cohort #27</a></li>
+          <li><a href="/Photos.html" class="text-black text-decoration-none">Gallery</a></li>
+        </ul>
+      </div>
+
+    
+      <div class="col-md-4 text-center mb-4">
+        <h5>About Cohort 27</h5>
+        <p>
+          We rock!!!!!!
+        </p>
+      </div>
+    </div>
+
+    <hr class="border-dark" />
+
+  
+    <div class="text-center pb-3">
+      <p class="mb-0">&copy; 2024 Dev Mission. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Bootstrap JS script-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="experience.js"></script>
+  </body>
+</html>

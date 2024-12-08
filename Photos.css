@@ -1,0 +1,28 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    margin-top: 2rem;
+  width: 100vw;
+  margin-left: .7rem;
+}
+.gallery img {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+/* .gallery img:hover {
+    transform: scale(1.05);
+} */
+
+h1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.navbar-nav {
+  width: 24rem;
+}
