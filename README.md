@@ -1,22 +1,67 @@
-# Hello Website (blank)
+# DevMission Cohort #27 Class Directory
 
-This is a basic static HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen 🪄 immediately in the preview window. You can upload assets like images or audio in `assets` to the left. The rest is up to you and your imagination.
+Welcome to the official DevMission Cohort #27 Class Directory project! This interactive platform showcases the journey, projects, and profiles of participants in the DevMission Pre-Apprenticeship Program. Explore the skills, experiences, and stories of future change makers in the tech industry.
 
-## What's in this project?
+## 🚀 Project Overview
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+This directory was designed to:
 
-← `index.html`: This is the main HTML page for your site.
+- **Showcase student profiles**: Highlight each participant’s journey, favorite experiences, and completed projects.
+- **Demonstrate technical skills**: Provide a platform to practice and display skills in web development, JavaScript, C++, and more.
+- **Connect with others**: Enable networking through links to personal portfolios, LinkedIn profiles, and other projects.
 
-← `style.css`: CSS files add styling rules to your content.
+## 🎨 Features
 
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript.
+- **Dynamic Student Profiles**: Rotating bio section featuring names, bios, favorite moments, and project links.
+- **Photo Gallery**: Displays a curated selection of images from the program.
+- **Interactive Circle UI**: A rotating circular display for navigating through student head shots.
+- **Responsive Design**: Fully mobile-friendly layout using Bootstrap and custom CSS.
+- **Integrated Media**: Background videos and an image gallery showcasing the cohort's experiences.
 
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
+## 🛠️ Technologies Used
 
-## You built this with Glitch!
+### Frontend
 
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
+- HTML5, CSS3, JavaScript
+- Bootstrap 5: Responsive design framework
+- Figma: For wire frames and UI design
 
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+### Backend
+
+- Airtable API: Dynamic data fetching for student profiles and gallery content
+
+### Other
+
+- Version Control: Git and GitHub
+- Deployment: Glitch platform
+
+## 📁 Project Structure
+
+### Key Directories and Files
+
+#### HTML Files
+
+- index.html: Main landing page with video and links to other sections.
+- experience.html: Student directory with interactive navigation.
+- Photos.html: Gallery page showcasing program images.
+
+#### CSS Files
+
+- style.css: Global styles for consistent design.
+- experience.css: Styles specific to the student directory.
+- bioBox.css: Custom styles for the bio section.
+
+#### JavaScript Files
+
+- experience.js: Handles bio transitions and interactive elements.
+- Photos.js: Dynamically fetches and displays gallery images.
+- rotation.js: Controls the interactive circular navigation.
+
+📝 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+📧 Contact
+For any questions or suggestions, please contact the project team at:
+
+Email: [email](support@devmission.org)
+Website: [devmission](devmission.org)
